@@ -1,3 +1,7 @@
+html, body{
+    padding: 0;
+    margin: 0;
+}
 *{
     border: 1px solid red;
 }
@@ -12,19 +16,31 @@ header{
     align-items: center;
 }
 
+header .logo{
+    font-size: 24px;
+    color:#F9FAF8;
+}
+
 header ul{
     display: flex;
     gap: 20px;
     list-style: none;
 }
+.hero,
+header,
+footer{
+    background-color: #1F2937;
+    color:#E5E7EB;
+}
+
 
 .hero{
     display: flex;
-    margin:150px;
+    padding:150px;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    gap:20px;
+    gap:100px;
     align-content: center;
 }
 .left-hero,
@@ -36,9 +52,26 @@ header ul{
     padding: 20px;
 }
 
+.left-hero h1{
+    font-size: 36px;
+    font-weight: 900;
+    color:#F9FAF8
+}
+
 .img-hero{
     width:400px;
     height:200px;
+    background-color: grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background-color:#3882F6;
+    color:#E5E7EB;
+    padding:5px 25px;
+    border-radius: 10%;
 }
 
 .services-section{
@@ -52,7 +85,7 @@ header ul{
 .sign-up{
     display: flex;
     flex: 1;
-    margin: 50px 150px;
+    padding: 50px 150px;
     
 }
 
@@ -69,11 +102,28 @@ header ul{
     flex:1 0 100px;
 }
 
+.services-section h2{
+    font-weight: bolder;
+    font-size: 36px;
+}
+
+.service .img{
+    border: 3px solid #3882F6 ;
+    border-radius: 10%;
+}
 .reviews{
     flex-direction: column;
+    gap: 10px;
+    background-color: #E5E7EB;
+}
+.reviews quote{
+    font-size: 36px;
+    font-style: italic;
 }
 .reviews small{
     display: flex;
+    font-weight: bold;
+    font-size: 20px;
     justify-content: end;
 }
 .img{
