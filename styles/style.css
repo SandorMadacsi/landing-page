@@ -1,10 +1,11 @@
 html, body{
     padding: 0;
     margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
 }
-*{
+/* *{
     border: 1px solid red;
-}
+} */
 .container{
     display: flex;
     flex-direction: column;
@@ -18,7 +19,7 @@ header{
 
 header .logo{
     font-size: 24px;
-    color:#F9FAF8;
+    color:#EFF6E0
 }
 
 header ul{
@@ -29,8 +30,8 @@ header ul{
 .hero,
 header,
 footer{
-    background-color: #1F2937;
-    color:#E5E7EB;
+    background-color: #01161E;
+    color:#598392;
 }
 
 
@@ -61,17 +62,18 @@ footer{
 .img-hero{
     width:400px;
     height:200px;
-    background-color: grey;
+    background-color: #EFF6E0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 button{
-    background-color:#3882F6;
+    background-color:#124559;
     color:#E5E7EB;
-    padding:5px 25px;
-    border-radius: 10%;
+    padding:10px 40px;
+    border-radius: 10px;
+    border: none;;
 }
 
 .services-section{
@@ -81,8 +83,7 @@ button{
     margin:150px;
 }
 .services,
-.reviews,
-.sign-up{
+.reviews{
     display: flex;
     flex: 1;
     padding: 50px 150px;
@@ -108,13 +109,13 @@ button{
 }
 
 .service .img{
-    border: 3px solid #3882F6 ;
+    border: 3px solid #124559 ;
     border-radius: 10%;
 }
 .reviews{
     flex-direction: column;
     gap: 10px;
-    background-color: #E5E7EB;
+    background-color: #AEC3B0;
 }
 .reviews quote{
     font-size: 36px;
@@ -132,16 +133,33 @@ height:100px;
 margin:20px;
 }
 
-.sign-up{
-    justify-content: space-around;
+.sign-div{
+    display:flex;
+    margin:100px;
+    padding:10px 40px;
+    background-color: #124559;
+    border-radius: 10px;
+    flex-wrap:wrap;
+    color: #E5E7EB;
 
 }
 
-.sign-up .right-cont{
+.left-cont,
+.right-cont{
+    flex:1 1 200px;
+}
+
+.right-cont{
     display: flex;
+    justify-content: center;
     align-items: center;
 }
 
+.sign-btn{
+    border: 1px solid white;
+    
+}
 footer{
+    padding: 20px 0;
     text-align: center;
 }
