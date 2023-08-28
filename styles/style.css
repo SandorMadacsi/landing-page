@@ -1,11 +1,10 @@
 html, body{
     padding: 0;
     margin: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
 }
-/* *{
-    border: 1px solid red;
-} */
+
 .container{
     display: flex;
     flex-direction: column;
@@ -22,10 +21,12 @@ header .logo{
     color:#EFF6E0
 }
 
+
 header ul{
     display: flex;
-    gap: 20px;
+    gap: 50px;
     list-style: none;
+    font-size:23px;
 }
 .hero,
 header,
@@ -43,10 +44,13 @@ footer{
     flex-wrap: wrap;
     gap:100px;
     align-content: center;
+    height:50vh;
+    font-size: 24px;;
+    
 }
 .left-hero,
 .right-hero{
-    max-width:400px;
+    max-width:900px;
 }
 
 .left-hero{
@@ -54,26 +58,33 @@ footer{
 }
 
 .left-hero h1{
-    font-size: 36px;
+    font-size: 40px;
     font-weight: 900;
     color:#F9FAF8
 }
 
+
 .img-hero{
-    width:400px;
-    height:200px;
+    width:800px;
+    height:400px;
     background-color: #EFF6E0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.right-hero{
+    display: flex;
+    flex-shrink:auto;
+}
+
 button{
     background-color:#124559;
+    font-size: 23px;
     color:#E5E7EB;
-    padding:10px 40px;
+    padding:30px 40px;
     border-radius: 10px;
-    border: none;;
+    border: none;
 }
 
 .services-section{
@@ -85,7 +96,6 @@ button{
 .services,
 .reviews{
     display: flex;
-    flex: 1;
     padding: 50px 150px;
     
 }
@@ -97,7 +107,7 @@ button{
 
 .service{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: column;
     flex:1 0 100px;
@@ -113,7 +123,9 @@ button{
     border-radius: 10%;
 }
 .reviews{
+    height: 40vh;
     flex-direction: column;
+    justify-content: center;
     gap: 10px;
     background-color: #AEC3B0;
 }
@@ -125,7 +137,6 @@ button{
     display: flex;
     font-weight: bold;
     font-size: 20px;
-    justify-content: end;
 }
 .img{
 width: 100px;
@@ -135,12 +146,13 @@ margin:20px;
 
 .sign-div{
     display:flex;
-    margin:100px;
-    padding:10px 40px;
+    margin:200px;
+    padding:30px 40px;
     background-color: #124559;
     border-radius: 10px;
     flex-wrap:wrap;
     color: #E5E7EB;
+    font-size: 30px;
 
 }
 
